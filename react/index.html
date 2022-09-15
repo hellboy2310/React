@@ -21,13 +21,39 @@
 
 
 
-        function Element(){
+        function Element({name = "hellboy",age = "19"}){
             return(
-                <h1>hello world</h1>
+                <h1>hello world {name} and his age is {age}</h1>
             )
         }
 
-        ReactDOM.render(<Element/>,root);
+        function Element2(){
+            return(
+                <h2>How are you </h2>
+            )
+        }
+
+        function Element3(){
+            return(
+                <h3>I am the next big thing</h3>
+            )
+        }
+         
+        function Parent(){
+            return(
+                <div>
+                    <Element name = "bhavesh" age = "20"/>
+                    <Element2/>
+                    <Element/>
+                    <Element2/>
+                    <Element/>
+                    <Element3/>
+                    </div>    
+            )
+            
+        }
+
+        ReactDOM.render(<Parent/>,root);
 
     </script>
 </body>
