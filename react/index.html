@@ -27,9 +27,9 @@
             )
         }
 
-        function Element2(){
+        function Element2({address = "usa"}){
             return(
-                <h2>How are you </h2>
+                <h2>How are you {address}</h2>
             )
         }
 
@@ -43,11 +43,12 @@
             return(
                 <div>
                     <Element name = "bhavesh" age = "20"/>
-                    <Element2/>
+                    <Element2 address = "india"/>
                     <Element/>
                     <Element2/>
                     <Element/>
                     <Element3/>
+                    <Element2/>
                     </div>    
             )
             
